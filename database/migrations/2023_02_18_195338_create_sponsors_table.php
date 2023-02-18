@@ -16,8 +16,7 @@ return new class extends Migration
             $table->string('name')->unique();
             $table->string('link')->unique();
             $table->string('image', 2048)->nullable();
-            $table->boolean('status')->nullable()->default(false);
-            $table->softDeletes();
+            $table->boolean('is_published')->nullable()->default(false);
             $table->timestamps();
         });
     }

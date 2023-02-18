@@ -22,7 +22,7 @@ class Sponsors extends Component
      */
     public function render(): View|Closure|string
     {
-        $sponsors = Sponsor::where('status', 1)->limit(5)->get();
+        $sponsors = Sponsor::where('is_published', 1)->limit(5)->get();
 
         return view('components.sponsors', [
             'sponsors' => $sponsors,

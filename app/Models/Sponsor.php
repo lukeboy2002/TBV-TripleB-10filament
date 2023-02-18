@@ -9,5 +9,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Sponsor extends Model
 {
     use HasFactory;
-    use SoftDeletes;
+
+    protected $fillable = [
+        'name',
+        'link',
+        'image',
+        'is_published',
+    ];
+
 }
