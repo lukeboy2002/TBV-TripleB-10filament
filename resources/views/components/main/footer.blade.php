@@ -14,10 +14,10 @@
         <div id="logo" class="pb-8">
             <x-application-logo />
             <div class="pt-4 block lg:text-center lg:flex lg:justify-center lg:items-center">
-{{--                <x-links.btn-default href="#" class="uppercase border border-orange-500">Volg ons</x-links.btn-default>--}}
+                <x-links.btn-outline-default href="#" class="">Volg ons</x-links.btn-outline-default>
 
                 <div class="block space-x-2 pt-4 lg:pt-0 lg:flex lg:items-center lg:space-x-5 lg:ml-4">
-{{--                    <x-menus.social />--}}
+                    <x-menus.social />
                 </div>
             </div>
         </div>
@@ -25,15 +25,15 @@
         <div>
             <div class="text-orange-500 font-black pb-3 uppercase">Laatse Nieuws</div>
             <div class="w-1/4 border-b-2 border-orange-500 mb-4"></div>
-{{--            <x-posts-footer />--}}
+{{--            <x-footer-posts />--}}
         </div>
         <!-- CONTACT -->
         <div class="mt-4">
             <div class="text-orange-500 font-black pb-3 uppercase">Neem contact op</div>
             <div class="w-1/4 border-b-2 border-orange-500 mb-4"></div>
-{{--            <x-blocks.join-us />--}}
+            <x-blocks.join-us />
             <div class="pt-4">
-{{--                <x-blocks.contact />--}}
+                <x-blocks.contact />
             </div>
         </div>
     </div>
@@ -41,10 +41,10 @@
     <div class="bg-gray-200 dark:bg-gray-900">
         <div class="md:max-w-7x mx-auto md:flex justify-around items-center py-5 px-5 md:px-0">
             <div class="flex justify-center md:justify-around space-x-1 md:space-x-6">
-                {{--                <x-menu.footer />--}}
+                <x-menus.footer />
             </div>
             <div class="pt-6 text-center md:pt-0">
-{{--                <x-links.default href="#">{{ config('app.name') }} &copy; 2023</x-links.default>--}}
+                <x-links.default href="#">{{ config('app.name') }} &copy; 2023</x-links.default>
             </div>
         </div>
     </div>
